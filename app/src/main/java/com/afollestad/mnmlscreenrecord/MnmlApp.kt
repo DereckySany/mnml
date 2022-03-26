@@ -52,13 +52,15 @@ class MnmlApp : Application() {
     startKoin {
       androidLogger()
       androidContext(this@MnmlApp)
-      modules(
-          commonModule,
-          notificationsModule,
-          prefModule,
-          engineModule,
-          mainModule,
-          viewModelModule
+      modules(          
+ ​          ​listOf​( 
+ ​              commonModule, 
+ ​              notificationsModule, 
+ ​              prefModule, 
+ ​              engineModule, 
+ ​              mainModule, 
+ ​              viewModelModule 
+ ​          )
       )
     }
 
